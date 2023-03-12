@@ -10,7 +10,6 @@ exports.exportToExcel = (req, res) => {
           const workbook = new exceljs.Workbook();
           const usersSheet = workbook.addWorksheet("Users");
           const tasksSheet = workbook.addWorksheet("Tasks");
-
           
           usersSheet.columns = [
             { header: "ID", key: "_id" },
